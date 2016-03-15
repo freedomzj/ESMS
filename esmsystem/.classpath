@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="lib/sqljdbc4.jar"/>
 	<classpathentry kind="lib" path="lib/substance.jar"/>
+	<classpathentry kind="lib" path="/luhucrm/WebContent/WEB-INF/lib/mysql-connector-java-5.0.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

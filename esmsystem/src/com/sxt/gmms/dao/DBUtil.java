@@ -41,9 +41,16 @@ public class DBUtil {
 	public static Connection getConn(){
 		Connection con=null;
 		try {
-			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-			String url = "jdbc:sqlserver://localhost:1433; DatabaseName=esmsdb";
-			con = DriverManager.getConnection(url, "sa", "serical");
+//			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+//			String url = "jdbc:sqlserver://localhost:1433; DatabaseName=esmsdb";
+//			con = DriverManager.getConnection(url, "sa", "serical");
+			
+			
+			Class.forName("com.mysql.jdbc.Driver");
+			String url = "jdbc:mysql://192.168.2.54:3306/esms?characterEncoding=utf-8";
+			con = DriverManager.getConnection(url, "root", "123456");
+			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
